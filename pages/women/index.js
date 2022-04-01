@@ -6,7 +6,7 @@ const Women = ({ shoes }) => {
 
 	return <Shoes shoes={womenShoes} type='women' />
 }
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const response = await fetch('https://sneakers-next-js-website.vercel.app/api/shoes')
 	const data = await response.json()
 	return {
