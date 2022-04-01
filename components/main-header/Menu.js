@@ -18,7 +18,6 @@ const Menu = () => {
 		dispatch(menuActions.closeMenu())
 	}
 	const menu = useSelector(state => state.menu.menuData)
-	console.log(menu)
 	useEffect(() => {
 		dispatch(getMenuData())
 	}, [dispatch])
