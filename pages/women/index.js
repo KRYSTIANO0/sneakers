@@ -7,7 +7,7 @@ const Women = ({ shoes }) => {
 	return <Shoes shoes={womenShoes} type='women' />
 }
 export const getStaticProps = async () => {
-	const response = await fetch('/api/shoes')
+	const response = await fetch('https://sneakers-next.netlify.app/api/shoes')
 	const data = await response.json()
 	return {
 		props: {
