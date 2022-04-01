@@ -10,9 +10,11 @@ export const cartSlice = createSlice({
 	reducers: {
 		checkStoredCart(state) {
 			const data = localStorage.getItem('cart')
-			const cart = JSON.parse(data)
-			if (cart) {
-				state.cart = cart
+			if (data) {
+				const cart = JSON.parse(data)
+				if (cart) {
+					state.cart = cart
+				}
 			}
 		},
 		addHandler(state, action) {

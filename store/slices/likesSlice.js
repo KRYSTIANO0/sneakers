@@ -10,9 +10,11 @@ export const likesSlice = createSlice({
 	reducers: {
 		checkStoredLikes(state) {
 			const data = localStorage.getItem('likes')
-			const likes = JSON.parse(data)
-			if (likes.length > 0) {
-				state.likes = likes
+			if (data) {
+				const likes = JSON.parse(data)
+				if (likes.length > 0) {
+					state.likes = likes
+				}
 			}
 		},
 		addHandler(state, action) {

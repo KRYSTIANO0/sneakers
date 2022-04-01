@@ -2,6 +2,7 @@ import React from 'react'
 //components
 import Shoes from '../../components/men-section/Shoes'
 const Women = ({ shoes }) => {
+	console.log(shoes)
 	const womenShoes = shoes.filter(shoe => shoe.category === 'women')
 
 	return <Shoes shoes={womenShoes} type='women' />
