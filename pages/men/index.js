@@ -6,7 +6,7 @@ const Men = ({ shoes }) => {
 	return <Shoes shoes={mensShoes} type='men' />
 }
 export const getStaticProps = async () => {
-	const response = await fetch('https://sneakers-next.netlify.app/api/shoes')
+	const response = await fetch('https://sneakers-next-js-website.vercel.app/api/shoes')
 	const data = await response.json()
 	return {
 		props: {
