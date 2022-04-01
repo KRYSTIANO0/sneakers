@@ -1,0 +1,19 @@
+.layout main {
+  padding-top: 7rem;
+}
+
+.layout footer {
+  background-color: #111111;
+  padding: 2rem;
+}
+
+.layout footer ul {
+  text-align: center;
+}
+
+.layout footer ul li {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=Layout.module.css.map */

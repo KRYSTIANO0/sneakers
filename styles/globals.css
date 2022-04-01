@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Luckiest+Guy&family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Luckiest+Guy&family=Modak&family=Yanone+Kaffeesatz:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	background: none;
+	list-style: none;
+	box-sizing: border-box;
+	transition: all linear 0.3s;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #1d1d1d;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.title-text {
+	font-family: 'Contrail One', cursive;
+	color: whitesmoke;
+}
+.logo {
+	font-family: 'Luckiest Guy', cursive;
+	color: #4070f4;
+	font-size: 2.5rem;
+}
+.grap-text {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #dedfe5;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 30;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+.icon {
+	font-size: 2.5rem;
+	color: whitesmoke;
+	margin: 0 0.5rem;
+}
+.icon:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	color: #4070f4;
+	text-shadow: 0 0 5px #4070f4;
+}
+.card {
+	background-color: white;
+	width: 90%;
+	border-radius: 5px;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+}

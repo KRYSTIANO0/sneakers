@@ -1,0 +1,19 @@
+.menu-list-item {
+  font-size: 1.5rem;
+  margin: 0.1rem 0;
+}
+
+.menu-list-item h1 {
+  padding: 2rem;
+  color: white !important;
+}
+
+.menu-list-item:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.menu-list-item:hover h1 {
+  color: #1d1d1d !important;
+}
+/*# sourceMappingURL=NavbarItem.module.css.map */

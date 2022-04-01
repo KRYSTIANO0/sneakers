@@ -1,0 +1,27 @@
+.swiper {
+	.slide {
+		img {
+			width: 100%;
+		}
+	}
+}
+.all-images {
+	display: none;
+}
+
+//mediaquries
+
+@media (min-width: 995px) {
+	.swiper {
+		display: none;
+	}
+	.all-images {
+		display: grid;
+
+		grid-template-columns: 50% 50%;
+		gap: 1rem;
+		img {
+			width: 100%;
+		}
+	}
+}

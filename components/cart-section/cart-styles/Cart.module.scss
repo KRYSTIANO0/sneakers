@@ -1,0 +1,35 @@
+.cart-section {
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	ul {
+		width: 90%;
+		margin: 2.5rem auto;
+	}
+	.total-price {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 3rem;
+	}
+	.empty-cart {
+		text-align: center;
+	}
+	.nav-link {
+		margin: 1rem auto;
+
+		padding: 1rem 2.2rem;
+		width: 30%;
+		text-align: center;
+		border-radius: 6px;
+		color: white;
+		font-size: 1.4rem;
+		background-color: #4070f4;
+		&:hover {
+			cursor: pointer;
+			background-color: #89a7fa;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.swiper .slide img {
+  width: 100%;
+}
+
+.all-images {
+  display: none;
+}
+
+@media (min-width: 995px) {
+  .swiper {
+    display: none;
+  }
+  .all-images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  .all-images img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=ImageSlider.module.css.map */

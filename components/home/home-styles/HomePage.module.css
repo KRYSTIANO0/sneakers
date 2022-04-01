@@ -1,0 +1,21 @@
+.section-home {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.section-home h1 {
+  margin-top: 2rem;
+}
+
+.section-home .mongo {
+  color: #13aa52;
+}
+
+.section-home .nextjs {
+  color: #4070f4;
+}
+
+.section-home p {
+  margin: 2rem 0;
+}
+/*# sourceMappingURL=HomePage.module.css.map */

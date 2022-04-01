@@ -1,0 +1,22 @@
+.container {
+	text-align: center;
+	margin: 2rem 0;
+	h1 {
+		font-size: 3rem;
+	}
+	.mens-shoes {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 50%);
+	}
+	.like-shoes {
+		grid-template-columns: repeat(auto-fit, 25%);
+	}
+}
+
+//media quries
+
+@media (min-width: 995px) {
+	.container .mens-shoes {
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 150px));
+	}
+}

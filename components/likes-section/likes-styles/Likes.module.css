@@ -1,0 +1,13 @@
+.section-likes header {
+  text-align: center;
+  margin: 2rem;
+}
+
+.section-likes header h1 {
+  font-size: 3rem;
+}
+
+.section-likes .empty-wish-list {
+  text-align: center;
+}
+/*# sourceMappingURL=Likes.module.css.map */

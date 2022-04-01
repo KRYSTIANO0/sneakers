@@ -1,0 +1,28 @@
+.container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+.container .mens-shoes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 50%);
+}
+
+.container .like-shoes {
+  -ms-grid-columns: (25%)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 25%);
+}
+
+@media (min-width: 995px) {
+  .container .mens-shoes {
+    -ms-grid-columns: (minmax(30rem, 150px))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 150px));
+  }
+}
+/*# sourceMappingURL=Shoes.module.css.map */

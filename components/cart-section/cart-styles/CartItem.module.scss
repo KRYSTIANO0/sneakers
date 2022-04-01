@@ -1,0 +1,50 @@
+.cart-list-item {
+	background-color: white;
+	border-radius: 15px;
+	margin: 1rem auto;
+	max-width: 80rem;
+	padding: 1.4rem;
+	display: flex;
+	justify-content: space-between;
+	.box {
+		display: flex;
+
+		.cart-img {
+			width: 8rem;
+			height: 8rem;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+		.description {
+			color: #1d1d1d;
+			padding: 1rem;
+			h2 {
+				font-size: 1.5rem;
+			}
+			p {
+				margin: 0.5rem 0;
+				font-size: 1.5rem;
+			}
+			.quantity {
+				display: flex;
+				align-items: center;
+				label {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+	.cart-item-actions {
+		.delete {
+			text-align: right;
+			font-size: 1.6rem;
+			color: rgb(248, 93, 93);
+			transition: all linear 0s;
+			&:hover {
+				color: red;
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+		}
+	}
+}

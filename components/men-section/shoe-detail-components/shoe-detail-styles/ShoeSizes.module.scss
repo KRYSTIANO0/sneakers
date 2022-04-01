@@ -1,0 +1,40 @@
+.sizes {
+	padding: 1rem;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 1rem;
+	button {
+		border-radius: 5px;
+		border: rgb(229, 229, 229) solid 0.2rem;
+		font-size: 1.7rem;
+		transition: all linear 0s;
+		li {
+			border-radius: 3px;
+		}
+		.size-item {
+			padding: 1rem;
+
+			background-color: white;
+		}
+		&.choosen {
+			border: #4070f4 solid 0.2rem;
+		}
+		&.active {
+			color: #1d1d1d !important;
+			&:hover {
+				cursor: pointer;
+				border: #4070f4 solid 0.2rem;
+			}
+		}
+		&:focus {
+			background-color: #1d1d1d !important;
+		}
+	}
+}
+
+@media (min-width: 995px) {
+	.sizes {
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 100px));
+	}
+}

@@ -1,0 +1,84 @@
+.detail-section {
+	margin: 2rem;
+	header {
+		padding: 1rem;
+		h1 {
+			font-size: 3rem;
+		}
+		.prices {
+			display: flex;
+			align-items: center;
+
+			.regular-price {
+				margin: 1rem 0;
+				color: gray;
+				text-decoration: line-through;
+				font-size: 2rem;
+			}
+			.rabat-new-price {
+				margin: 0 1rem;
+				font-size: 2.2rem;
+				color: #e32b2b;
+			}
+		}
+		.price {
+			margin: 0.6rem 0;
+			font-size: 2.2rem;
+			color: #4070f4;
+		}
+	}
+	h2 {
+		margin: 1rem 0;
+		font-size: 2rem;
+		padding: 1rem;
+	}
+	.button-container {
+		padding: 1rem;
+		.add-button {
+			width: 100%;
+			padding: 1.4rem;
+			font-size: 2rem;
+			background-color: #4070f4;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	.media-desktop {
+		display: none;
+	}
+}
+.alert {
+	padding: 1rem;
+	color: white;
+	text-align: center;
+	margin-top: 1.4rem;
+	&.success {
+		background-color: rgba(15, 241, 15, 0.288);
+	}
+	&.danger {
+		background-color: rgba(250, 0, 0, 0.411);
+	}
+}
+
+//media
+
+@media (min-width: 995px) {
+	.media-desktop {
+		display: block !important;
+		width: 50%;
+	}
+	.media-mobile {
+		display: none;
+	}
+	.detail-section {
+		display: flex;
+		.media-desktop-wrap {
+			width: 50%;
+			margin-left: 5rem;
+		}
+		.button-container .add-button {
+			width: 30%;
+		}
+	}
+}

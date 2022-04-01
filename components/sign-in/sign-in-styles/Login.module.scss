@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+.login-modal {
+	padding: 1rem 2rem;
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		button {
+			svg {
+				color: #1d1d1d;
+			}
+		}
+	}
+	.description {
+		margin: 2rem 0;
+		padding: 0 5rem;
+		font-size: 2rem;
+		color: #1d1d1d;
+		text-align: center;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.join-us {
+		text-align: right;
+		margin: 2rem 0;
+		.modal-grap-text {
+			color: #8d8d8d;
+			font-size: 1.5rem;
+		}
+		.join-us-btn {
+			color: #1d1d1d;
+			text-decoration: underline;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

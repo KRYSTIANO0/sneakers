@@ -1,0 +1,105 @@
+.shoe-box {
+  border-radius: 8px;
+  border: solid 1px transparent;
+  margin: 1rem;
+}
+
+.shoe-box .img-box {
+  position: relative;
+}
+
+.shoe-box .img-box img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.shoe-box .img-box img:hover {
+  cursor: pointer;
+}
+
+.shoe-box .img-box .heart-icon {
+  position: absolute;
+  color: #1d1d1d;
+  top: 5%;
+  right: 5%;
+  font-size: 2.4rem;
+  -webkit-transition: all linear 0.1s;
+  transition: all linear 0.1s;
+}
+
+.shoe-box .img-box .heart-icon.active {
+  color: #e32b2b;
+}
+
+.shoe-box .img-box .heart-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.shoe-box .img-box .price-span {
+  position: absolute;
+  bottom: 7%;
+  left: 40%;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.26);
+  background-color: #4070f456;
+  border-radius: 8px;
+  color: #1d1d1d;
+  font-size: 1.6rem;
+}
+
+.shoe-box .img-box .price-span.rabat {
+  background-color: #1d1d1d;
+}
+
+.shoe-box .img-box .rabat-span {
+  position: absolute;
+  bottom: 75%;
+  left: 90%;
+  color: black;
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: 8px;
+  background-color: rgba(253, 103, 103, 0.377);
+  font-size: 1.4rem;
+}
+
+.shoe-box .img-box .rabat-price {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.shoe-box .img-box .rabat-new-price {
+  color: #e32b2b;
+  font-size: 1.8rem;
+}
+
+.shoe-box .description {
+  text-align: center;
+  padding: 1rem;
+}
+
+.shoe-box .description h2 {
+  font-size: 2rem;
+}
+
+.shoe-box .description p {
+  font-size: 1.6rem;
+}
+
+.shoe-box:hover {
+  border: solid 1px #4070f4;
+}
+
+.shoe-box:hover .price-span {
+  background-color: #658bf3;
+  bottom: 10%;
+}
+
+.shoe-box:hover .rabat-span {
+  background-color: #e32b2b;
+}
+/*# sourceMappingURL=Shoe.module.css.map */

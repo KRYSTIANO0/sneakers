@@ -1,0 +1,51 @@
+.sizes {
+  padding: 1rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.sizes button {
+  border-radius: 5px;
+  border: #e5e5e5 solid 0.2rem;
+  font-size: 1.7rem;
+  -webkit-transition: all linear 0s;
+  transition: all linear 0s;
+}
+
+.sizes button li {
+  border-radius: 3px;
+}
+
+.sizes button .size-item {
+  padding: 1rem;
+  background-color: white;
+}
+
+.sizes button.choosen {
+  border: #4070f4 solid 0.2rem;
+}
+
+.sizes button.active {
+  color: #1d1d1d !important;
+}
+
+.sizes button.active:hover {
+  cursor: pointer;
+  border: #4070f4 solid 0.2rem;
+}
+
+.sizes button:focus {
+  background-color: #1d1d1d !important;
+}
+
+@media (min-width: 995px) {
+  .sizes {
+    -ms-grid-columns: (minmax(20rem, 100px))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 100px));
+  }
+}
+/*# sourceMappingURL=ShoeSizes.module.css.map */
