@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 export const getMenuData = createAsyncThunk('getMenuData', async () => {
-	const response = await fetch('http://localhost:3000/api/menu')
+	const response = await fetch('https://sneakers-next.netlify.app/api/menu')
 	const data = await response.json()
 	return { data }
 })
